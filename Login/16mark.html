@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+        }
+        span {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Sample Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home Section</h2>
+        <p>This is the home section of the website. Below is an example of an image.</p>
+        <img src="https://via.placeholder.com/800x400" alt="Sample Image">
+    </section>
+
+    <section id="about">
+        <h2>About Section</h2>
+        <p>This section contains a table and some media elements.</p>
+
+        <!-- Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Item 1</td>
+                    <td>Description of Item 1</td>
+                    <td>$10.00</td>
+                </tr>
+                <tr>
+                    <td>Item 2</td>
+                    <td>Description of Item 2</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td>Item 3</td>
+                    <td>Description of Item 3</td>
+                    <td>$30.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Audio -->
+        <p>Listen to this sample audio:</p>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Video -->
+        <p>Watch this sample video:</p>
+        <video width="640" height="360" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Section</h2>
+        <p>If you have any questions, please fill out the form below:</p>
+
+        <!-- Form -->
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Sample Website. All rights reserved. <span>Designed by Me</span></p>
+    </footer>
+</body>
+</html>

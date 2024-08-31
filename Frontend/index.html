@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Rain Product E-commerce</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div id="clock" style="font-size: 24px; margin-top: 10px;margin-left: 10px;"></div>
+
+<main>
+    <section id="home">
+        <h2>Welcome to Rain Product E-commerce</h2>
+        <p>Explore our range of products and services.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+
+        <div class="product">
+            <h3>Umbrella</h3>
+            <div >
+                <button id="btn" onclick="prevUmbrella()">Prev</button>
+                <img id="carouselImage1" src="Pictures/Umbrella.jpeg" alt="Umbrella Pic" class="img-box">       
+                <button id="bt" onclick="nextUmbrella()">Next</button>
+            </div>
+
+            <h4>Description</h4> 
+            <p>An umbrella is a portable device used to shield against rain or sunlight. Typically consisting of a collapsible canopy supported by metal ribs, it offers protection by deflecting precipitation or providing shade. Umbrellas are essential accessories for inclement weather and outdoor activities, providing convenience and comfort in changing conditions..</p>
+            <p>Price: Rs:200</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h3>Rain Coat</h3>
+            <div>
+                <button class="btn" onclick="prevRaincoat()">Prev</button>
+                <img id="carouselImage2" src="Pictures/RainCoat.jpeg" alt="Raincoat Pic">
+                <button class="btn" onclick="nextRaincoat()">Next</button>
+            </div>
+            <h4>Description</h4> 
+            <p>A raincoat is a waterproof outer garment worn to protect against rain. Typically made from water-resistant materials such as vinyl, polyester, or nylon, it offers practicality and comfort during wet weather conditions. Raincoats come in various styles, from lightweight jackets to full-length trench coats, providing versatility for outdoor activities while keeping the wearer dry and shielded from moisture.</p>
+            <p>Price: Rs:1200</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h3>Rain & Dust Bagcover</h3>
+            <div>
+                <button class="btn" onclick="prevBagcover()">Prev</button>
+                <img id="carouselImage3" src="Pictures/Bagcover.jpeg" alt="Bagcover Pic">
+                <button class="btn" onclick="nextBagcover()">Next</button>
+            </div>
+            <h4>Description</h4> 
+            <p>A rain and dust bag cover is a protective accessory designed to shield bags and belongings from rain and dust. Made from water-resistant or waterproof materials like nylon or polyester, these covers are lightweight and portable, easily fitting over bags of various sizes. They feature elastic edges or drawstrings to secure them snugly around the bag, preventing moisture ingress and keeping contents dry. Additionally, they provide a barrier against dust, maintaining the cleanliness of belongings during outdoor travel or storage. Ideal for commuters, travelers, and outdoor enthusiasts, rain and dust bag covers offer practical protection and peace of mind in unpredictable weather conditions.</p>
+            <p>Price: Rs:800</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn more about our company and mission.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Simple E-commerce. All rights reserved.</p>
+    <p>Contact: info@simple-ecommerce.com</p>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>

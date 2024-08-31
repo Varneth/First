@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regstyle.css">
+    <script src="app.js" defer></script>
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" id="form">
+            <h1>Register</h1>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"
+                pattern="[a-z0-9._%+\-]+@[a-z]{5}+.[a-z]{3}$" required
+                title="Should be in correct email format">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="number">Number</label>
+                <input type="tel" id="number" name="number" pattern="[789][0-9]{9}" required
+                title="Must contain ten numbers and first number must be 7,8,9">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                <div class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" id="cpassword" name="cpassword"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required
+  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                <div class="error"></div>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
+
+  
